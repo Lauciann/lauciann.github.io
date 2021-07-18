@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+ <section>
+
+        <table>
+            <tr>
+                <td>
+                    <!--Section de la fiche d'identité-->
+                    <h2>Fiche d'Identité</h2>
+                    <form method="POST" action="">
+                        <p>
+                            <label for="NomPersonnage">Nom du Personnage</label> : <input type="text" id="NomPersonnage" placeholder="Ex : Hans" name="NomPersonnage"/>
+                        </p>
+                        <p>
+                            <label for="PrenomPersonnage">Prénom du Personnage</label> : <input type="text" id="PrenomPersonnage" placeholder="Ex : Greif" name="PrenomPersonnage"/>
+                        </p>
+                        <p>
+                            <label for="sexe">Sexe</label> : <input type="text" id="sexe" placeholder="Ex : Masculin" name="sexe"/>
+                        </p>
+                        <p>
+                            <label for="age">Âge</label> : <input type="text" id="age" placeholder="Ex : 25 ans" name="age"/>
+                        </p>
+                        <p>
+                            <label for="poids">Poids</label> : <input type="text" id="poids" placeholder="Ex : 75 Kg" name="poids"/>
+                        </p>
+                        <p>
+                            <label for="taille">Taille</label> : <input type="text" id="taille" placeholder="Ex : 180 cm" name="taille"/>
+                        </p>
+                        <p>
+                            <label for="archetype">Archétype</label> : <input type="text" id="archetype" placeholder="Ex : Employé de Bureau" name="archetype"/>
+                        </p>
+                        <p>
+                            <label for="apparence">Apparence</label> : <textarea name="apparence" id="apparence"></textarea>
+                        </p>
+                        <p>
+                            <label for="caractere">Caractère</label> : <textarea name="caractere" id="caractere"></textarea>
+                        </p>
+                        <p>
+                            <label for="notes">Notes</label> : <textarea name="notes" id="notes"></textarea>
+                        </p>
+                    </form>
+                </td>
+            
+
+            
+                <td>
+                        <!--Section pour la photo de profil-->
+                        <h2>Photo d'Identité</h2>
+                        <input type="file" id="input" onchange="handlefiles(this.file)">
+
+                        <!--Section des caractéristiques-->
+                        <h2>Caractéristiques</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <form method="POST" action="">
+                                        <p>
+                                            <label for="for">Force</label> : <input type="number" min="1" max="6" id="for" name="for"/>
+                                        </p>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form method="POST" action="">
+                                        <p>
+                                            <label for="cha">Charisme</label> : <input type="number" min="1" max="6" id="cha" name="cha"/>
+                                        </p>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form method="POST" action="">
+                                        <p>
+                                            <label for="con">Constitution</label> : <input type="number" min="1" max="6" id="con" name="con"/>
+                                        </p>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form method="POST" action="">
+                                        <p>
+                                            <label for="esp">Esprit</label> : <input type="number" min="1" max="6" id="esp" name="esp"/>
+                                        </p>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form method="POST" action="">
+                                        <p>
+                                            <label for="agi">Agilité</label> : <input type="number" min="1" max="6" id="agi" name="agi"/>
+                                        </p>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form method="POST" action="">
+                                        <p>
+                                            <label for="per">Perception</label> : <input type="number" min="1" max="6" id="per" name="per"/>
+                                        </p>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                </td>
+            </tr>    
+    </table>
+
+    <section>
+        <!--Section des compétences-->
+        <h2>Compétences</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        Nom de la compétence
+                    </td>
+                    <td>
+                        Bonus
+                    </td>
+                </tr>
+            </thead>
+            <tr>
+            <td><input type="text" size="80"/></td>
+            <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+        </table>
+
+        <!--Section des Talents-->
+        <h2>Talents</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        Description du talent
+                    </td>
+                    <td>
+                        Bonus
+                    </td>
+                </tr>
+            </thead>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="80"/></td>
+                <td><input type="number" min="1" max="3"/></td>
+            </tr>
+        </table>
+    </section>
+
+    <!--Section des Équipements-->
+    <h2>Équipements</h2>
+    <p>
+        <textarea name="equipement" id="equipement"></textarea>
+    </p>
+
+    <!--Section des Armes-->
+    <h2>Armes</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    Nom
+                </td>
+                <td>
+                    Type/Rythme de tir
+                </td>
+                <td>
+                    Dégâts
+                </td>
+                <td>
+                    Chargeur
+                </td>
+                <td>
+                    Type de Munitions
+                </td>
+                <td>
+                    Munitions Restantes
+                </td>
+                <td>
+                    Modifications
+                </td>
+            </tr>
+        </thead>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+
+    <!--Section des armures-->
+    <h2>Armures</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    Nom
+                </td>
+                <td>
+                    Bonus de Protection
+                </td>
+                <td>
+                    Localisations couvertes
+                </td>
+            </tr>
+        </thead>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+            <td><input type="checkbox" name="tete" id="tete"><label for="tete">Tête</label><input type="checkbox" name="brgau" id="brgau"><label for="brgau">Bras Gauche</label><input type="checkbox" name="brdrt" id="brdrt"><label for="brdrt">Bras Droit</label><input type="checkbox" name="torse" id="torse"><label for="torse">Torse</label><input type="checkbox" name="jmbgau" id="jmbgau"><label for="jmbgau">Jambe Gauche</label><input type="checkbox" name="jmbdrt" id="jmbdrt"><label for="jmbdrt">Jambe Droite</label></td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="number"></td>
+            <td><input type="checkbox" name="tete" id="tete"><label for="tete">Tête</label><input type="checkbox" name="brgau" id="brgau"><label for="brgau">Bras Gauche</label><input type="checkbox" name="brdrt" id="brdrt"><label for="brdrt">Bras Droit</label><input type="checkbox" name="torse" id="torse"><label for="torse">Torse</label><input type="checkbox" name="jmbgau" id="jmbgau"><label for="jmbgau">Jambe Gauche</label><input type="checkbox" name="jmbdrt" id="jmbdrt"><label for="jmbdrt">Jambe Droite</label></td>
+        </tr>
+    </table>
+
+    <!--Section du statut ECG-->
+    <h2>Statut ECG</h2>
+    <p><input type="checkbox" name="vert1" id="vert1"><input type="checkbox" name="vert2" id="vert2"><input type="checkbox" name="vert3" id="vert3"><input type="checkbox" name="vert4" id="vert4"><input type="checkbox" name="vert5" id="vert5"><input type="checkbox" name="vert6" id="vert6"> Vert [-]</p>
+    <p><input type="checkbox" name="jaune1" id="jaune1"><input type="checkbox" name="jaune2" id="jaune2"><input type="checkbox" name="jaune3" id="jaune3"><input type="checkbox" name="jaune4" id="jaune4"><input type="checkbox" name="jaune5" id="jaune5"><input type="checkbox" name="jaune6" id="jaune6"> Jaune [-]</p>
+    <p><input type="checkbox" name="orange1" id="orange1"><input type="checkbox" name="orange2" id="orange2"><input type="checkbox" name="orange3" id="orange3"><input type="checkbox" name="orange4" id="orange4"><input type="checkbox" name="orange5" id="orange5"><input type="checkbox" name="orange6" id="orange6"> Orange [-2]</p>
+    <p><input type="checkbox" name="rouge1" id="rouge1"><input type="checkbox" name="rouge2" id="rouge2"><input type="checkbox" name="rouge3" id="rouge3"><input type="checkbox" name="rouge4" id="rouge4"><input type="checkbox" name="rouge5" id="rouge5"><input type="checkbox" name="rouge6" id="rouge6"> Rouge [-4]</p>
+
+
+    <!--Section Sang Froid / Expérience-->
+    <h2>Sang Froid / Expérience</h2>
+    <table>
+        <tr>
+            <td>
+                <p>
+                    <label for="sgfract">Sang-Froid actuel </label> : <input type="number" min="1" max="6" id="sgfract" name="sgfract"/>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <label for="sgfrtot">Sang-Froid Total</label> : <input type="number" min="1" max="6" id="sgfrtot" name="sgfrtot"/>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <label for="xp">Expérience actuellement disponible</label> : <input type="text" name="xp" id="xp"/>
+                </p>
+            </td>
+        </tr>
+    </table>
+</html>
